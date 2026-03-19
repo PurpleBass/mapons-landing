@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Mapons</title>
+  <meta name="description" content="Mapons Privacy Policy" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --orange: #F7941D;
+      --navy: #1A1F2E;
+      --bg: #FFFFFF;
+      --bg-soft: #F6F8FC;
+      --text: #1A1F2E;
+      --text-muted: #6B7280;
+      --border: #E5E7EB;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: rgba(255,255,255,0.9);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    .nav-logo-icon {
+      width: 32px;
+      height: 32px;
+      background: var(--orange);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .nav-logo-icon svg {
+      width: 18px;
+      height: 18px;
+      fill: white;
+    }
+
+    .nav-logo-name {
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--text);
+      letter-spacing: -0.4px;
+    }
+
+    /* ── CONTENT ── */
+    .page-wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 100px 24px 80px;
+    }
+
+    .page-header {
+      margin-bottom: 48px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .page-header h1 {
+      font-size: clamp(28px, 5vw, 40px);
+      font-weight: 900;
+      letter-spacing: -1px;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    .page-header .last-updated {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    .policy-body h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text);
+      margin: 40px 0 12px;
+    }
+
+    .policy-body p {
+      font-size: 15px;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+      line-height: 1.7;
+    }
+
+    .policy-body ul {
+      margin: 0 0 14px 20px;
+    }
+
+    .policy-body ul li {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 6px;
+    }
+
+    .placeholder {
+      background: #FFF3E8;
+      color: var(--orange);
+      border-radius: 4px;
+      padding: 0 4px;
+      font-weight: 600;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--navy);
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding: 32px 24px;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 14px;
+      color: rgba(255,255,255,0.3);
+    }
+
+    footer a {
+      color: rgba(255,255,255,0.5);
+      text-decoration: none;
+    }
+
+    footer a:hover { color: var(--orange); }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="/">
+      <div class="nav-logo-icon">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+        </svg>
+      </div>
+      <span class="nav-logo-name">mapons</span>
+    </a>
+  </nav>
+
+  <!-- CONTENT -->
+  <div class="page-wrap">
+    <div class="page-header">
+      <h1>Privacy Policy</h1>
+      <p class="last-updated">Last updated: March 7, 2026</p>
+    </div>
+
+    <div class="policy-body">
+      <p>This Privacy Policy describes how Mapons ("App") handles your information.</p>
+
+      <h2>1. Data We Process</h2>
+      <p>Mapons may process:</p>
+      <ul>
+        <li>Data you import (for example CSV rows, addresses, GeoJSON, map metadata)</li>
+        <li>Location data (if you grant permission) for map-centering and location-based actions</li>
+        <li>Exported map outputs you choose to create</li>
+        <li>Account and backup metadata when you configure optional cloud backup</li>
+        <li>AI prompt content you submit in the Analyst feature</li>
+      </ul>
+
+      <h2>2. On-Device Storage</h2>
+      <p>By default, your map data and app state are stored locally on your device using on-device app storage.</p>
+
+      <h2>3. Optional Cloud Backup (Supabase)</h2>
+      <p>If you enable cloud backup:</p>
+      <ul>
+        <li>You provide your Supabase project URL and anon key in the app.</li>
+        <li>You may sign in (magic link) to associate backups with your account.</li>
+        <li>Backup payloads are uploaded to your configured Supabase project.</li>
+        <li>You can restore or delete backups from within the app.</li>
+      </ul>
+      <p>Cloud backup is optional and can be disabled at any time.</p>
+
+      <h2>4. AI Analyst Feature</h2>
+      <p>If you use the Analyst feature and configure an AI provider/API key:</p>
+      <ul>
+        <li>Prompts and relevant map context may be sent to the selected AI provider to generate responses.</li>
+        <li>Data handling by that provider is governed by the provider's own terms and privacy policy.</li>
+        <li>You control whether to enable this feature and what content you submit.</li>
+      </ul>
+
+      <h2>5. Permissions</h2>
+      <p>Mapons may request:</p>
+      <ul>
+        <li><strong>Location permission:</strong> to show your position, center the map, or drop a location-based pin.</li>
+        <li><strong>Photos permission (add-only):</strong> to save exported images to your photo library.</li>
+      </ul>
+      <p>You can manage permissions in iOS Settings at any time.</p>
+
+      <h2>6. Data Sharing</h2>
+      <p>We do not sell personal data. Data is shared only as needed to provide features you enable (for example Supabase backup or AI provider requests).</p>
+
+      <h2>7. Data Retention and Deletion</h2>
+      <ul>
+        <li>Local data remains on-device until you delete it in the app or uninstall the app.</li>
+        <li>Cloud backups remain in your configured Supabase project until deleted.</li>
+        <li>You can remove cloud credentials/sign out from the app.</li>
+      </ul>
+
+      <h2>8. Security</h2>
+      <p>We take reasonable technical steps to protect data, but no method of storage or transmission is guaranteed to be fully secure.</p>
+
+      <h2>9. Children's Privacy</h2>
+      <p>Mapons is not directed to children under 13, and we do not knowingly collect personal information from children under 13.</p>
+
+      <h2>10. International Use</h2>
+      <p>If you use cloud/AI features, data may be processed in countries other than your own depending on your selected providers.</p>
+
+      <h2>11. Changes to This Policy</h2>
+      <p>We may update this policy from time to time. The "Last updated" date reflects the latest version.</p>
+
+      <h2>12. Contact</h2>
+      <ul>
+        <li>Company/Owner: <span class="placeholder">[YOUR NAME OR ENTITY]</span></li>
+        <li>Email: <span class="placeholder">[YOUR CONTACT EMAIL]</span></li>
+        <li>Address: <span class="placeholder">[YOUR BUSINESS ADDRESS, IF APPLICABLE]</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>
+      &copy; 2026 Mapons &nbsp;·&nbsp;
+      <a href="mailto:hello@mapons.com">hello@mapons.com</a> &nbsp;·&nbsp;
+      <a href="/privacy">Privacy Policy</a> &nbsp;·&nbsp;
+      <a href="/terms">Terms of Use</a>
+    </p>
+  </footer>
+
+</body>
+</html>

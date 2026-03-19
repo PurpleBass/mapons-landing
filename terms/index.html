@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Use — Mapons</title>
+  <meta name="description" content="Mapons Terms of Use" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --orange: #F7941D;
+      --navy: #1A1F2E;
+      --bg: #FFFFFF;
+      --bg-soft: #F6F8FC;
+      --text: #1A1F2E;
+      --text-muted: #6B7280;
+      --border: #E5E7EB;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: rgba(255,255,255,0.9);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    .nav-logo-icon {
+      width: 32px;
+      height: 32px;
+      background: var(--orange);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .nav-logo-icon svg {
+      width: 18px;
+      height: 18px;
+      fill: white;
+    }
+
+    .nav-logo-name {
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--text);
+      letter-spacing: -0.4px;
+    }
+
+    /* ── CONTENT ── */
+    .page-wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 100px 24px 80px;
+    }
+
+    .page-header {
+      margin-bottom: 48px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .page-header h1 {
+      font-size: clamp(28px, 5vw, 40px);
+      font-weight: 900;
+      letter-spacing: -1px;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    .page-header .last-updated {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    .policy-body h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text);
+      margin: 40px 0 12px;
+    }
+
+    .policy-body p {
+      font-size: 15px;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+      line-height: 1.7;
+    }
+
+    .policy-body ul {
+      margin: 0 0 14px 20px;
+    }
+
+    .policy-body ul li {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 6px;
+    }
+
+    .placeholder {
+      background: #FFF3E8;
+      color: var(--orange);
+      border-radius: 4px;
+      padding: 0 4px;
+      font-weight: 600;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--navy);
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding: 32px 24px;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 14px;
+      color: rgba(255,255,255,0.3);
+    }
+
+    footer a {
+      color: rgba(255,255,255,0.5);
+      text-decoration: none;
+    }
+
+    footer a:hover { color: var(--orange); }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="/">
+      <div class="nav-logo-icon">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+        </svg>
+      </div>
+      <span class="nav-logo-name">mapons</span>
+    </a>
+  </nav>
+
+  <!-- CONTENT -->
+  <div class="page-wrap">
+    <div class="page-header">
+      <h1>Terms of Use</h1>
+      <p class="last-updated">Last updated: March 7, 2026</p>
+    </div>
+
+    <div class="policy-body">
+      <p>These Terms of Use ("Terms") govern your use of Mapons (the "App"). By using the App, you agree to these Terms.</p>
+
+      <h2>1. Use of the App</h2>
+      <p>You may use Mapons for lawful purposes only and in compliance with applicable laws and regulations.</p>
+      <p>You are responsible for:</p>
+      <ul>
+        <li>The data you import, create, or export</li>
+        <li>The legality of your data sources</li>
+        <li>How you use analysis outputs, routes, and AI-generated responses</li>
+      </ul>
+
+      <h2>2. Accounts and Third-Party Services</h2>
+      <p>Some features rely on third-party services you configure, including:</p>
+      <ul>
+        <li>Supabase (optional cloud backup)</li>
+        <li>AI providers (optional Analyst feature)</li>
+      </ul>
+      <p>Your use of those services is subject to their own terms and privacy policies.</p>
+
+      <h2>3. Location, Routing, and Map Information Disclaimer</h2>
+      <p>Map, route, contour, and location outputs are provided for convenience and may be incomplete or inaccurate. Do not rely on the App for emergency, safety-critical, or legally binding decisions.</p>
+
+      <h2>4. AI Output Disclaimer</h2>
+      <p>AI-generated content may be incorrect or incomplete. You are responsible for reviewing and validating AI outputs before use.</p>
+
+      <h2>5. Intellectual Property</h2>
+      <p>The App and its original code/content are protected by applicable intellectual property laws. You retain rights to your own imported/generated data, subject to third-party rights and licenses.</p>
+
+      <h2>6. Acceptable Use</h2>
+      <p>You agree not to:</p>
+      <ul>
+        <li>Use the App for unlawful, harmful, or fraudulent activity</li>
+        <li>Attempt unauthorized access to systems or data</li>
+        <li>Interfere with app operation or abuse third-party services through the App</li>
+      </ul>
+
+      <h2>7. Termination</h2>
+      <p>We may suspend or terminate access to the App (or certain features) for violations of these Terms or to protect service integrity.</p>
+
+      <h2>8. No Warranty</h2>
+      <p>The App is provided "as is" and "as available," without warranties of any kind, express or implied, to the fullest extent permitted by law.</p>
+
+      <h2>9. Limitation of Liability</h2>
+      <p>To the fullest extent permitted by law, we are not liable for indirect, incidental, special, consequential, or punitive damages, or for loss of data, profits, or business opportunities arising from use of the App.</p>
+
+      <h2>10. Indemnification</h2>
+      <p>You agree to indemnify and hold harmless the App owner/operator from claims, liabilities, and expenses arising out of your use of the App or violation of these Terms.</p>
+
+      <h2>11. Changes to the Terms</h2>
+      <p>We may update these Terms periodically. Continued use of the App after updates means you accept the revised Terms.</p>
+
+      <h2>12. Governing Law</h2>
+      <p>These Terms are governed by the laws of <span class="placeholder">[STATE/COUNTRY]</span>, without regard to conflict of law principles.</p>
+
+      <h2>13. Contact</h2>
+      <ul>
+        <li>Company/Owner: <span class="placeholder">[YOUR NAME OR ENTITY]</span></li>
+        <li>Email: <span class="placeholder">[YOUR CONTACT EMAIL]</span></li>
+        <li>Address: <span class="placeholder">[YOUR BUSINESS ADDRESS, IF APPLICABLE]</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>
+      &copy; 2026 Mapons &nbsp;·&nbsp;
+      <a href="mailto:hello@mapons.com">hello@mapons.com</a> &nbsp;·&nbsp;
+      <a href="/privacy">Privacy Policy</a> &nbsp;·&nbsp;
+      <a href="/terms">Terms of Use</a>
+    </p>
+  </footer>
+
+</body>
+</html>
