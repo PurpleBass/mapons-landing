@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy — Mapons</title>
-  <meta name="description" content="Mapons Privacy Policy" />
+  <meta name="description" content="Mapons Privacy Policy — how we handle your data." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -127,13 +127,12 @@
       margin-bottom: 6px;
     }
 
-    .placeholder {
-      background: #FFF3E8;
+    .policy-body a {
       color: var(--orange);
-      border-radius: 4px;
-      padding: 0 4px;
-      font-weight: 600;
+      text-decoration: none;
     }
+
+    .policy-body a:hover { text-decoration: underline; }
 
     /* ── FOOTER ── */
     footer {
@@ -174,78 +173,106 @@
   <div class="page-wrap">
     <div class="page-header">
       <h1>Privacy Policy</h1>
-      <p class="last-updated">Last updated: March 7, 2026</p>
+      <p class="last-updated">Last updated: March 18, 2026</p>
     </div>
 
     <div class="policy-body">
-      <p>This Privacy Policy describes how Mapons ("App") handles your information.</p>
+      <p>This Privacy Policy describes how Mapons ("App", "we", "us") handles your information. We designed Mapons to be privacy-first: your map data lives on your device by default and is never sold.</p>
 
-      <h2>1. Data We Process</h2>
-      <p>Mapons may process:</p>
+      <h2>1. Data You Provide</h2>
+      <p>Mapons processes data you actively provide or import, including:</p>
       <ul>
-        <li>Data you import (for example CSV rows, addresses, GeoJSON, map metadata)</li>
-        <li>Location data (if you grant permission) for map-centering and location-based actions</li>
-        <li>Exported map outputs you choose to create</li>
-        <li>Account and backup metadata when you configure optional cloud backup</li>
-        <li>AI prompt content you submit in the Analyst feature</li>
+        <li>Map workspaces, layers, and pins you create inside the app</li>
+        <li>CSV, GeoJSON, KML, or other files you import</li>
+        <li>Addresses and coordinates you enter manually</li>
+        <li>Map metadata such as names, colors, and notes</li>
+        <li>AI Analyst prompts you submit</li>
+        <li>WhatsApp messaging content you compose and send via the app</li>
       </ul>
 
       <h2>2. On-Device Storage</h2>
-      <p>By default, your map data and app state are stored locally on your device using on-device app storage.</p>
+      <p>By default, all map data, layers, and app settings are stored locally on your device using iOS on-device storage. No data leaves your device unless you explicitly enable a cloud feature.</p>
 
       <h2>3. Optional Cloud Backup (Supabase)</h2>
-      <p>If you enable cloud backup:</p>
+      <p>Mapons offers an optional cloud backup feature. If you enable it:</p>
       <ul>
-        <li>You provide your Supabase project URL and anon key in the app.</li>
-        <li>You may sign in (magic link) to associate backups with your account.</li>
-        <li>Backup payloads are uploaded to your configured Supabase project.</li>
-        <li>You can restore or delete backups from within the app.</li>
+        <li>You sign in with your email or a social provider (Google, Apple)</li>
+        <li>Your map backups are uploaded to a Supabase-hosted database</li>
+        <li>You can restore or delete backups at any time from within the app</li>
+        <li>Your account email is stored to associate backups with your account</li>
       </ul>
-      <p>Cloud backup is optional and can be disabled at any time.</p>
+      <p>Cloud backup is entirely optional. You can sign out and delete your backups at any time. Supabase's own privacy policy governs their infrastructure. We do not share your backup data with any third parties.</p>
 
-      <h2>4. AI Analyst Feature</h2>
-      <p>If you use the Analyst feature and configure an AI provider/API key:</p>
+      <h2>4. Location Data</h2>
+      <p>Mapons may request your device location (when-in-use only) for:</p>
       <ul>
-        <li>Prompts and relevant map context may be sent to the selected AI provider to generate responses.</li>
-        <li>Data handling by that provider is governed by the provider's own terms and privacy policy.</li>
-        <li>You control whether to enable this feature and what content you submit.</li>
+        <li>Centering the map on your current position</li>
+        <li>Dropping a pin at your current location</li>
+        <li>Route building starting from your current location</li>
+      </ul>
+      <p>Your location is used only in the moment you request it. It is not stored, tracked over time, or sent to any Mapons server.</p>
+
+      <h2>5. AI Analyst Feature</h2>
+      <p>The Analyst feature lets you query your map data using AI. If you use it:</p>
+      <ul>
+        <li>Your prompts and relevant map context are sent to the AI provider you configure (e.g. OpenAI, Anthropic, Google)</li>
+        <li>You supply your own API key — Mapons never stores or transmits your API keys to our servers</li>
+        <li>Data handling by the AI provider is governed by that provider's own privacy policy</li>
+      </ul>
+      <p>You control whether to enable this feature and what content you submit.</p>
+
+      <h2>6. WhatsApp Cloud API Messaging</h2>
+      <p>If you configure WhatsApp Cloud API credentials for bulk messaging:</p>
+      <ul>
+        <li>Your credentials (phone number ID, access token) are stored locally on your device only</li>
+        <li>Messages are sent directly from your device to the Meta WhatsApp Cloud API</li>
+        <li>Mapons does not store, log, or forward message content</li>
+        <li>Meta's privacy policy governs their handling of message data</li>
       </ul>
 
-      <h2>5. Permissions</h2>
-      <p>Mapons may request:</p>
+      <h2>7. Routing (Apple Maps)</h2>
+      <p>Route building uses Apple's MapKit and MKDirections APIs. Waypoint coordinates are sent to Apple's servers to calculate routes. Apple's privacy policy governs this data. No personal account information is included in routing requests.</p>
+
+      <h2>8. Photos Permission</h2>
+      <p>Mapons may request add-only photo library access to save exported map images to your Photos app. We never read your existing photos.</p>
+
+      <h2>9. Analytics and Crash Reporting</h2>
+      <p>Mapons does not use third-party analytics SDKs. Crash reports may be collected by Apple through the standard App Store crash reporting system, subject to your device privacy settings.</p>
+
+      <h2>10. Data Sharing</h2>
+      <p>We do not sell, rent, or trade your personal data. Data is shared only as strictly necessary to deliver features you have enabled:</p>
       <ul>
-        <li><strong>Location permission:</strong> to show your position, center the map, or drop a location-based pin.</li>
-        <li><strong>Photos permission (add-only):</strong> to save exported images to your photo library.</li>
+        <li>Supabase — for cloud backup (if enabled)</li>
+        <li>AI providers — for Analyst queries (if enabled, using your own API key)</li>
+        <li>Meta WhatsApp Cloud API — for bulk messaging (if configured)</li>
+        <li>Apple MapKit / MKDirections — for route calculation</li>
       </ul>
-      <p>You can manage permissions in iOS Settings at any time.</p>
 
-      <h2>6. Data Sharing</h2>
-      <p>We do not sell personal data. Data is shared only as needed to provide features you enable (for example Supabase backup or AI provider requests).</p>
-
-      <h2>7. Data Retention and Deletion</h2>
+      <h2>11. Data Retention and Deletion</h2>
       <ul>
-        <li>Local data remains on-device until you delete it in the app or uninstall the app.</li>
-        <li>Cloud backups remain in your configured Supabase project until deleted.</li>
-        <li>You can remove cloud credentials/sign out from the app.</li>
+        <li>Local data stays on your device until you delete it in the app or uninstall Mapons</li>
+        <li>Cloud backups remain in your account until you delete them from within the app</li>
+        <li>Signing out removes your session; your backups remain until you delete them manually</li>
+        <li>To delete your account and all associated cloud data, contact us at <a href="mailto:contact@mapons.com">contact@mapons.com</a></li>
       </ul>
 
-      <h2>8. Security</h2>
-      <p>We take reasonable technical steps to protect data, but no method of storage or transmission is guaranteed to be fully secure.</p>
+      <h2>12. Security</h2>
+      <p>We follow industry-standard practices to protect your data. Cloud authentication uses secure token-based sessions. API keys are stored only on your device and never transmitted to Mapons servers. No method of storage or transmission is 100% secure.</p>
 
-      <h2>9. Children's Privacy</h2>
-      <p>Mapons is not directed to children under 13, and we do not knowingly collect personal information from children under 13.</p>
+      <h2>13. Children's Privacy</h2>
+      <p>Mapons is not directed to children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us at <a href="mailto:contact@mapons.com">contact@mapons.com</a>.</p>
 
-      <h2>10. International Use</h2>
-      <p>If you use cloud/AI features, data may be processed in countries other than your own depending on your selected providers.</p>
+      <h2>14. International Use</h2>
+      <p>Mapons is operated from Spain. If you use cloud or AI features, data may be processed in other countries depending on your configured providers. By using these features you consent to such transfers.</p>
 
-      <h2>11. Changes to This Policy</h2>
-      <p>We may update this policy from time to time. The "Last updated" date reflects the latest version.</p>
+      <h2>15. Changes to This Policy</h2>
+      <p>We may update this policy from time to time. The "Last updated" date at the top reflects the most recent revision. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
 
-      <h2>12. Contact</h2>
+      <h2>16. Contact</h2>
+      <p>For questions or requests regarding your data:</p>
       <ul>
-        <li>Company/Owner: <span class="placeholder">[YOUR NAME OR ENTITY]</span></li>
-        <li>Email: <span class="placeholder">[YOUR CONTACT EMAIL]</span></li>
-        <li>Address: <span class="placeholder">[YOUR BUSINESS ADDRESS, IF APPLICABLE]</span></li>
+        <li>Email: <a href="mailto:contact@mapons.com">contact@mapons.com</a></li>
+        <li>Website: <a href="https://mapons.com">mapons.com</a></li>
       </ul>
     </div>
   </div>
@@ -254,9 +281,9 @@
   <footer>
     <p>
       &copy; 2026 Mapons &nbsp;·&nbsp;
-      <a href="mailto:hello@mapons.com">hello@mapons.com</a> &nbsp;·&nbsp;
+      <a href="mailto:contact@mapons.com">contact@mapons.com</a> &nbsp;·&nbsp;
       <a href="/privacy">Privacy Policy</a> &nbsp;·&nbsp;
-      <a href="/terms">Terms of Use</a>
+      <a href="/terms">Terms of Service</a>
     </p>
   </footer>
 

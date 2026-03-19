@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Terms of Use — Mapons</title>
-  <meta name="description" content="Mapons Terms of Use" />
+  <title>Terms of Service — Mapons</title>
+  <meta name="description" content="Mapons Terms of Service." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -127,13 +127,12 @@
       margin-bottom: 6px;
     }
 
-    .placeholder {
-      background: #FFF3E8;
+    .policy-body a {
       color: var(--orange);
-      border-radius: 4px;
-      padding: 0 4px;
-      font-weight: 600;
+      text-decoration: none;
     }
+
+    .policy-body a:hover { text-decoration: underline; }
 
     /* ── FOOTER ── */
     footer {
@@ -173,70 +172,89 @@
   <!-- CONTENT -->
   <div class="page-wrap">
     <div class="page-header">
-      <h1>Terms of Use</h1>
-      <p class="last-updated">Last updated: March 7, 2026</p>
+      <h1>Terms of Service</h1>
+      <p class="last-updated">Last updated: March 18, 2026</p>
     </div>
 
     <div class="policy-body">
-      <p>These Terms of Use ("Terms") govern your use of Mapons (the "App"). By using the App, you agree to these Terms.</p>
+      <p>These Terms of Service ("Terms") govern your use of Mapons (the "App"). By downloading or using the App, you agree to these Terms. If you do not agree, do not use the App.</p>
 
-      <h2>1. Use of the App</h2>
-      <p>You may use Mapons for lawful purposes only and in compliance with applicable laws and regulations.</p>
-      <p>You are responsible for:</p>
+      <h2>1. About Mapons</h2>
+      <p>Mapons is an iOS app that lets you create map workspaces from your geographic and spreadsheet data. Features include map layers, pin management, route building, AI-powered analysis, bulk WhatsApp messaging, and optional cloud backup.</p>
+
+      <h2>2. Use of the App</h2>
+      <p>You may use Mapons for lawful purposes only and in compliance with all applicable laws and regulations. You are responsible for:</p>
       <ul>
         <li>The data you import, create, or export</li>
-        <li>The legality of your data sources</li>
+        <li>Ensuring you have the right to use and process the data you import</li>
         <li>How you use analysis outputs, routes, and AI-generated responses</li>
+        <li>Any messages you send via the WhatsApp integration</li>
       </ul>
 
-      <h2>2. Accounts and Third-Party Services</h2>
+      <h2>3. Account and Cloud Features</h2>
+      <p>Optional cloud backup requires signing in with an email or social provider. You are responsible for maintaining the security of your account credentials. Notify us immediately at <a href="mailto:contact@mapons.com">contact@mapons.com</a> if you suspect unauthorized access to your account.</p>
+
+      <h2>4. Third-Party Services</h2>
       <p>Some features rely on third-party services you configure, including:</p>
       <ul>
-        <li>Supabase (optional cloud backup)</li>
-        <li>AI providers (optional Analyst feature)</li>
+        <li>Supabase — optional cloud backup</li>
+        <li>AI providers (OpenAI, Anthropic, Google, etc.) — optional Analyst feature, using your own API key</li>
+        <li>Meta WhatsApp Cloud API — optional bulk messaging</li>
+        <li>Apple MapKit / MKDirections — route calculation</li>
       </ul>
-      <p>Your use of those services is subject to their own terms and privacy policies.</p>
+      <p>Your use of those services is governed by their own terms and privacy policies. Mapons is not responsible for the availability, accuracy, or conduct of third-party services.</p>
 
-      <h2>3. Location, Routing, and Map Information Disclaimer</h2>
-      <p>Map, route, contour, and location outputs are provided for convenience and may be incomplete or inaccurate. Do not rely on the App for emergency, safety-critical, or legally binding decisions.</p>
+      <h2>5. Map, Route, and Location Disclaimer</h2>
+      <p>Map data, routes, contour results, and location outputs are provided for convenience only and may be incomplete or inaccurate. Do not rely on Mapons for emergency navigation, safety-critical decisions, or legally binding determinations.</p>
 
-      <h2>4. AI Output Disclaimer</h2>
-      <p>AI-generated content may be incorrect or incomplete. You are responsible for reviewing and validating AI outputs before use.</p>
+      <h2>6. AI Output Disclaimer</h2>
+      <p>AI-generated content produced by the Analyst feature may be incorrect, incomplete, or outdated. You are solely responsible for reviewing and validating AI outputs before acting on them.</p>
 
-      <h2>5. Intellectual Property</h2>
-      <p>The App and its original code/content are protected by applicable intellectual property laws. You retain rights to your own imported/generated data, subject to third-party rights and licenses.</p>
+      <h2>7. WhatsApp Messaging</h2>
+      <p>When using the WhatsApp bulk messaging feature, you agree to:</p>
+      <ul>
+        <li>Comply with Meta's WhatsApp Business Policy and applicable messaging laws</li>
+        <li>Only message recipients who have consented to receive messages from you</li>
+        <li>Not use the feature for spam, harassment, or unsolicited commercial messaging</li>
+      </ul>
+      <p>Mapons is not responsible for messages sent through your configured WhatsApp credentials.</p>
 
-      <h2>6. Acceptable Use</h2>
+      <h2>8. Acceptable Use</h2>
       <p>You agree not to:</p>
       <ul>
-        <li>Use the App for unlawful, harmful, or fraudulent activity</li>
-        <li>Attempt unauthorized access to systems or data</li>
-        <li>Interfere with app operation or abuse third-party services through the App</li>
+        <li>Use Mapons for unlawful, harmful, or fraudulent activity</li>
+        <li>Attempt to reverse-engineer, decompile, or tamper with the App</li>
+        <li>Attempt unauthorized access to any system, account, or data</li>
+        <li>Abuse or overload third-party APIs through the App</li>
+        <li>Use the App to infringe on the rights of others</li>
       </ul>
 
-      <h2>7. Termination</h2>
-      <p>We may suspend or terminate access to the App (or certain features) for violations of these Terms or to protect service integrity.</p>
+      <h2>9. Intellectual Property</h2>
+      <p>Mapons and its original code, design, and content are protected by applicable intellectual property laws and are the property of their respective owners. You retain full ownership of the data you import and create. We claim no rights over your map content.</p>
 
-      <h2>8. No Warranty</h2>
-      <p>The App is provided "as is" and "as available," without warranties of any kind, express or implied, to the fullest extent permitted by law.</p>
+      <h2>10. Termination</h2>
+      <p>We may suspend or terminate your access to cloud features for violations of these Terms or to protect the integrity of the service. You may stop using the App and delete your data at any time.</p>
 
-      <h2>9. Limitation of Liability</h2>
-      <p>To the fullest extent permitted by law, we are not liable for indirect, incidental, special, consequential, or punitive damages, or for loss of data, profits, or business opportunities arising from use of the App.</p>
+      <h2>11. No Warranty</h2>
+      <p>The App is provided "as is" and "as available," without warranties of any kind, express or implied, to the fullest extent permitted by law. We do not warrant that the App will be error-free, uninterrupted, or free of harmful components.</p>
 
-      <h2>10. Indemnification</h2>
-      <p>You agree to indemnify and hold harmless the App owner/operator from claims, liabilities, and expenses arising out of your use of the App or violation of these Terms.</p>
+      <h2>12. Limitation of Liability</h2>
+      <p>To the fullest extent permitted by law, Mapons and its owner shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including loss of data, profits, or business opportunities, arising from your use of or inability to use the App.</p>
 
-      <h2>11. Changes to the Terms</h2>
-      <p>We may update these Terms periodically. Continued use of the App after updates means you accept the revised Terms.</p>
+      <h2>13. Indemnification</h2>
+      <p>You agree to indemnify and hold harmless Mapons and its owner from any claims, liabilities, damages, and expenses (including legal fees) arising from your use of the App, your data, or your violation of these Terms.</p>
 
-      <h2>12. Governing Law</h2>
-      <p>These Terms are governed by the laws of <span class="placeholder">[STATE/COUNTRY]</span>, without regard to conflict of law principles.</p>
+      <h2>14. Changes to the Terms</h2>
+      <p>We may update these Terms periodically. We will update the "Last updated" date at the top of this page. Continued use of the App after changes constitutes acceptance of the revised Terms.</p>
 
-      <h2>13. Contact</h2>
+      <h2>15. Governing Law</h2>
+      <p>These Terms are governed by the laws of Spain, without regard to conflict of law principles. Any disputes shall be subject to the exclusive jurisdiction of the courts of Spain.</p>
+
+      <h2>16. Contact</h2>
+      <p>For questions about these Terms:</p>
       <ul>
-        <li>Company/Owner: <span class="placeholder">[YOUR NAME OR ENTITY]</span></li>
-        <li>Email: <span class="placeholder">[YOUR CONTACT EMAIL]</span></li>
-        <li>Address: <span class="placeholder">[YOUR BUSINESS ADDRESS, IF APPLICABLE]</span></li>
+        <li>Email: <a href="mailto:contact@mapons.com">contact@mapons.com</a></li>
+        <li>Website: <a href="https://mapons.com">mapons.com</a></li>
       </ul>
     </div>
   </div>
@@ -245,9 +263,9 @@
   <footer>
     <p>
       &copy; 2026 Mapons &nbsp;·&nbsp;
-      <a href="mailto:hello@mapons.com">hello@mapons.com</a> &nbsp;·&nbsp;
+      <a href="mailto:contact@mapons.com">contact@mapons.com</a> &nbsp;·&nbsp;
       <a href="/privacy">Privacy Policy</a> &nbsp;·&nbsp;
-      <a href="/terms">Terms of Use</a>
+      <a href="/terms">Terms of Service</a>
     </p>
   </footer>
 
